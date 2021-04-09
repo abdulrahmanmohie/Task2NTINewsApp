@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body class="body" style="background-image: url(css/galaxy.jpg);  background-attachment: fixed;background-repeat: no-repeat;background-size: cover;">
+    {{>header}}
+{{#each section}}
+    <div class="card" style="width:400px;">
+        <img class="card-img-top" src={{img}}>
+        <div class="card-body">
+            <h4 class="card-title">{{titles}}</h4>
+            <p class="card-text">{{descriptions}}</p>
+        </div>
+    </div><br>{{/each}}
+
+{{>footer}}
+  <script src="js/app.js"></script>
+    </body>
+</html>
